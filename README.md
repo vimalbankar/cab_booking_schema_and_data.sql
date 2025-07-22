@@ -1,76 +1,87 @@
+# 🚖 Cab Booking System – SQL Data Analysis Project
 
-# 🚖 Cab Booking System – SQL Analysis Project
+## 📌 Project Overview
 
-This project focuses on analyzing a relational database designed for a **Cab Booking System**. It aims to extract insights using SQL queries on bookings, drivers, trips, feedback, and customer behavior to enhance business decision-making.
+The cab booking industry has grown rapidly, offering convenience to customers and revenue opportunities to drivers. This project builds a **Cab Booking Database** in SQL to analyze:
 
----
-
-## 📌 Objectives
-
-- Monitor ongoing and completed bookings
-- Analyze customer booking behavior and cancellation trends
-- Track driver performance and trip efficiency
-- Calculate revenue trends and top-performing routes
-- Suggest operational improvements
+- ✅ Customer booking patterns
+- ✅ Driver performance & ratings
+- ✅ Trip metrics & revenue generation
+- ✅ Operational insights
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🧱 Database Schema
 
-- **Database**: MySQL
-- **Language**: SQL
-- **Environment**: MySQL Workbench / VS Code + SQL extension
+The relational schema includes:
+- `Customers`
+- `Drivers`
+- `Cabs`
+- `Bookings`
+- `TripDetails`
+- `Feedback`
 
----
-
-## 📂 Project Structure
-
-```
-Cab-Booking-System-SQL-Project/
-│
-├── Cab_Booking_Schema.sql        # Contains all CREATE TABLE and INSERT statements
-├── Analysis_Queries.sql          # Contains all problem-statement SQL queries
-├── README.md                     # Project overview and documentation
+Each table is connected using **foreign keys** to represent a realistic cab-booking environment.
 
 ---
 
-## 📊 SQL Problem Statements Solved
+## 📊 Key Insights & Analysis
 
-### Customer & Booking Analysis
-- Customers with most completed bookings
-- Customers with over 30% cancellation rate
-- Busiest day of the week for bookings
+### 1️⃣ Customer & Booking Analysis
+- Top customers by total completed bookings
+- Frequent cancellers (>30%)
+- Busiest day of the week by booking volume
 
-### Driver Performance
-- Drivers with low average ratings in past 3 months
-- Top 5 longest-distance drivers
-- Drivers with high cancellation percentages
+### 2️⃣ Driver Performance
+- Drivers with avg rating < 3.0 in last 3 months
+- Longest trip drivers
+- Drivers with highest cancellation %
 
-### Revenue Metrics
-- Total revenue in last 6 months
-- Top 3 most traveled routes
-- Correlation between driver ratings and fare revenue
-
----
-
-## ▶️ How to Use This Project
-
-1. Import `Cab_Booking_Schema.sql` in MySQL to create tables and insert data
-2. Run queries from `Analysis_Queries.sql` to view insights
-3. Visualize results using charts (optional)
-
----
-## ✨ Key Insights
-
-- Most bookings happen on weekends, especially Sundays
-- Drivers with ratings < 3.0 show more cancellations
-- Routes like “Baner to Kothrud” are highly frequent – more cabs should be allocated
+### 3️⃣ Revenue Metrics
+- Total revenue from completed trips (last 6 months)
+- Most popular pickup/dropoff routes
+- Correlation between driver rating & fare
 
 ---
 
-## 📬 Contact
+## 📂 Files Included
 
-Made by **Vimal Bankar**  
-📧 Email: vimalbankar702@gmail.com  
-🔗 LinkedIn: https://linkedin.com/in/vimal-bankar-4367b7218 
-🌐 GitHub: https://github.com/vimalbankar
+| File | Description |
+|------|-------------|
+| `cab_booking_schema_and_data.sql` | Complete schema & data insert script |
+| `analysis_queries.sql` | Insightful SQL queries for data analysis |
+| `ERD.png` *(optional)* | Entity Relationship Diagram of schema |
+
+---
+
+## 🛠️ Tools Used
+
+- SQL (MySQL / PostgreSQL / any RDBMS)
+- GitHub for version control
+
+---
+
+## 🧠 What I Learned
+
+- Designing normalized SQL schemas
+- Writing complex `JOIN`, `GROUP BY`, and subqueries
+- Extracting meaningful insights from transactional data
+
+---
+
+## 📎 How to Run This Project
+
+1. Open your SQL environment (like MySQL Workbench, pgAdmin, or SQLite)
+2. Run `cab_booking_schema_and_data.sql`
+3. Run queries from `analysis_queries.sql`
+
+---
+
+## 🙋‍♂️ Author
+
+**Vimal Bankar**  
+🔗 [GitHub Profile](https://github.com/vimalbankar)
+
+---
+
+## ⭐ Star this repo if it helped you!
